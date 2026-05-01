@@ -1,27 +1,21 @@
-# CS-340 / Codio add-ons
-# OS cruft
+# CS-340 / Codio / Python / Jupyter / MongoDB
+
+# -----------------------------
+# OS files
+# -----------------------------
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Codio workspace bits
+# -----------------------------
+# Codio workspace files
+# -----------------------------
 .settings/
 .codio
 
-# Jupyter temp autosaves
-*.ipynb~
-
-# MongoDB dumps / exports
-dump/
-*.bson
-*.metadata.json
-
-# Local config and secrets
-secrets.json
-config.json
-*.env.local
-
-# Python build / cache 
-# Byte-compiled / optimized / DLL files
+# -----------------------------
+# Python bytecode / cache
+# -----------------------------
 __pycache__/
 *.py[codz]
 *$py.class
@@ -29,7 +23,9 @@ __pycache__/
 # C extensions
 *.so
 
-# Distribution / packaging outputs
+# -----------------------------
+# Distribution / packaging
+# -----------------------------
 .Python
 build/
 develop-eggs/
@@ -49,21 +45,28 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# PyInstaller artifacts
+# -----------------------------
+# PyInstaller
+# -----------------------------
 *.manifest
 *.spec
 
+# -----------------------------
 # Installer logs
+# -----------------------------
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Test / coverage
+# -----------------------------
+# Unit test / coverage reports
+# -----------------------------
 htmlcov/
 .tox/
 .nox/
 .coverage
 .coverage.*
 .cache
+.cache/
 nosetests.xml
 coverage.xml
 *.cover
@@ -72,119 +75,132 @@ coverage.xml
 .pytest_cache/
 cover/
 
-# I18N 
+# -----------------------------
+# Translations
+# -----------------------------
 *.mo
 *.pot
 
-# Framework odds and ends 
-# Django
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask
-instance/
-.webassets-cache
-
-# Scrapy
-.scrapy
-
-# Sphinx
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
+# -----------------------------
 # Jupyter / IPython
+# -----------------------------
+.ipynb_checkpoints/
 .ipynb_checkpoints
+*.ipynb~
 profile_default/
 ipython_config.py
 
-# Env managers
-# pyenv
-# .python-version
-
-# pipenv
-# Pipfile.lock
-
-# uv
-# uv.lock
-
-# poetry
-# poetry.lock
-# poetry.toml
-
-# pdm
-# pdm.lock
-# pdm.toml
-.pdm-python
-.pdm-build/
-
-# pixi
-# pixi.lock
-.pixi
-
-# PEP 582
-__pypackages__/
-
-# Task queues / math 
-celerybeat-schedule
-celerybeat.pid
-*.sage.py
-
+# -----------------------------
 # Virtual environments
+# -----------------------------
 .env
 .envrc
 .venv
+.venv/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
 
-# IDE / tooling
-# Spyder
-.spyderproject
-.spyproject
+# -----------------------------
+# Local config and secrets
+# -----------------------------
+secrets.json
+config.json
+*.env.local
+*.secret
+*.secrets
 
-# Rope
-.ropeproject
+# -----------------------------
+# MongoDB dumps / exports
+# -----------------------------
+dump/
+*.bson
+*.metadata.json
 
-# MkDocs
-/site
+# -----------------------------
+# Logs and temporary files
+# -----------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
 
-# mypy / Pyre / pytype
+# -----------------------------
+# Type checking / linting caches
+# -----------------------------
 .mypy_cache/
 .dmypy.json
 dmypy.json
 .pyre/
 .pytype/
-
-# Cython debug
-cython_debug/
-
-# JetBrains
-# .idea/
-
-# Abstra
-.abstra/
-
-# VS Code (optional)
-# .vscode/
-
-# Ruff cache
 .ruff_cache/
 
-# PyPI config
-.pypirc
+# -----------------------------
+# Documentation build output
+# -----------------------------
+docs/_build/
+/site
 
-# Cursor editor
+# -----------------------------
+# IDE / editor files
+# -----------------------------
+.spyderproject
+.spyproject
+.ropeproject
+.idea/
+.vscode/
+.history/
 .cursorignore
 .cursorindexingignore
 
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
+# -----------------------------
+# Python environment managers
+# -----------------------------
+.pdm-python
+.pdm-build/
+.pixi/
+__pypackages__/
+
+# -----------------------------
+# pipenv / poetry / pdm / uv lock files
+# Keep these commented unless you intentionally want to ignore them.
+# Lock files can help reproducibility if this project is expanded later.
+# -----------------------------
+# Pipfile.lock
+# poetry.lock
+# pdm.lock
+# uv.lock
+# pixi.lock
+
+# -----------------------------
+# Notebook and dashboard generated output
+# -----------------------------
+*.html~
+*.png~
+*.csv~
+*.json~
+
+# -----------------------------
+# Large/generated local data files
+# Keep these commented unless you generate large local datasets.
+# -----------------------------
+# *.csv
+# *.tsv
+# *.json
+# *.xlsx
+
+# -----------------------------
+# Project-specific keep rules
+# These files are intentional portfolio artifacts.
+# -----------------------------
+!CRUD_Python_Module.py
+!ProjectTwoDashboard.ipynb
+!Grazioso Salvare Logo.png
+!Project Two.docx
+!README.md
+!LICENSE
